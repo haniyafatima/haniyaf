@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body {
+    /* animation effect */
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+    /* animation effect */
+    color: white;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    text-align: center;
+    background-image: url(images/bg.webp);
+    font-family: 'Varela Round', sans-serif;
+    overflow-x: hidden;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+section{
+background: rgba(255, 255, 255, 0.14);
+border-radius: 10px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(17.2px);
+-webkit-backdrop-filter: blur(17.2px);
+/* glassmorphism over */
+padding: 100px;
+height: 90vh;
+}
+
+.my-pic{
+    border-radius: 50%;
+ height: 100px;
+ width: 100px
+}
+
+div{
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    padding: 13px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+}
+
+div a{
+    text-decoration: none;
+    color: #213555;
+}
+
+div img{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
