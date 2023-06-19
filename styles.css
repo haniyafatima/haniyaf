@@ -2,10 +2,10 @@
 
 body {
     /* animation effect */
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-	height: 100vh;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
     /* animation effect */
     color: white;
     display: flex;
@@ -18,54 +18,67 @@ body {
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
-section{
-background: rgba(255, 255, 255, 0.14);
-border-radius: 10px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(17.2px);
--webkit-backdrop-filter: blur(17.2px);
-/* glassmorphism over */
-padding: 20px 100px 50px 100px;
-/* height: 90vh; */
-height: max-content;
+section {
+    background: rgba(255, 255, 255, 0.14);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(17.2px);
+    -webkit-backdrop-filter: blur(17.2px);
+    /* glassmorphism over */
+    padding: 20px 100px 50px 100px;
+    /* height: 90vh; */
+    height: max-content;
 }
 
-.my-pic{
+section a {
+    text-decoration: none;
+}
+
+.my-pic {
     border-radius: 50%;
- height: 100px;
- width: 100px
+    height: 100px;
+    width: 100px
 }
 
-div{
+div {
     background-color: white;
     border-radius: 25px;
     margin-bottom: 15px;
     padding: 13px;
-    width: 400px;
+    width: 350px;
     display: flex;
     align-items: center;
+    font-size: 13px;
     /* justify-content: space-around; */
 }
 
-div a{
+/* div a{
     text-decoration: none;
     color: #213555;
     margin-left: 25px;
-    width: max-content;
+} */
+
+a span {
+    text-decoration: none;
+    color: #213555;
+    margin-left: 25px;
 }
 
-div img{
+
+div img {
     border-radius: 50%;
     height: 30px;
     width: 30px;
@@ -74,23 +87,26 @@ div img{
 
 /* Responsive */
 
-  /* media */
-  @media screen and (max-width: 1270px) {
-   
+/* media */
+@media screen and (max-width: 1270px) {}
 
-  }
+/* media */
+@media screen and (max-width: 720px) {
+    body {
+        background-image: url(images/bg2.webp);
+    }
 
-  /* media */
-  @media screen and (max-width: 720px) {
-body{
-    background-image: url(images/bg2.webp);
-}
-div{
-    width: 380px;
-}    
+    div {
+        width: 330px;
+    }
 
-/* section{
+    div a {
+        width: 250px;
+        text-align: left;
+    }
+
+    /* section{
     height: 100vh;
 } */
 
-  }
+}
