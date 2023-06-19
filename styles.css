@@ -37,7 +37,8 @@ backdrop-filter: blur(17.2px);
 -webkit-backdrop-filter: blur(17.2px);
 /* glassmorphism over */
 padding: 20px 100px 50px 100px;
-height: 90vh;
+/* height: 90vh; */
+height: max-content;
 }
 
 .my-pic{
@@ -81,12 +82,15 @@ div img{
 
   /* media */
   @media screen and (max-width: 720px) {
+body{
+    background-image: url(images/bg2.webp);
+}
 div{
     width: 380px;
 }    
 
-section{
+/* section{
     height: 100vh;
-}
+} */
 
   }
