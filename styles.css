@@ -62,7 +62,12 @@ div {
     display: flex;
     align-items: center;
     font-size: 13px;
+      transition: 0.3s;
     /* justify-content: space-around; */
+}
+
+div:hover{
+    background-color: #FFF6F4;
 }
 
 /* div a{
