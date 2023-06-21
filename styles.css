@@ -84,6 +84,17 @@ div img {
     width: 30px;
 }
 
+.footer1, .footer2{
+    color: #FAF3F3;
+    font-size: 10px;
+    width: 340px;
+    margin: auto;
+}
+
+.footer2{
+    margin-top: 10px;
+}
+
 
 /* Responsive */
 
